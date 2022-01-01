@@ -10,5 +10,5 @@
 ✔️Retornar o focus para o `input` após inserção; </br>
 ✔️Ícone svg do [HeroIcons](https://heroicons.com/); </br>
 
-<img src="https://github.com/BrunoSobralDEV/Bootcamp-Inter/blob/main/javascript/introducao/to-do-list/fase-inicial.PNG" alt="to-do vazio" width="400px">
-<img src="https://github.com/BrunoSobralDEV/Bootcamp-Inter/blob/main/javascript/introducao/to-do-list/checked.PNG" alt="to-do preenchido" width="400px">
+<img src="https://github.com/BrunoSobralDEV/Bootcamp-Inter/blob/main/javascript/introducao/to-do-list/assets/fase-inicial.PNG" alt="to-do vazio" width="400px">
+<img src="https://github.com/BrunoSobralDEV/Bootcamp-Inter/blob/main/javascript/introducao/to-do-list/assets/checked.PNG" alt="to-do preenchido" width="400px">
