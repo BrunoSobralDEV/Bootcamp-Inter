@@ -5,24 +5,23 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>To-do List</title>
+    <link rel="stylesheet" href="styles.css">
+    <!--Google Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;700;900&display=swap" rel="stylesheet">
 </head>
 <body>
-    <section>
-        <header>
-            <h1>To-do list</h1>
-        </header>
+    <h1>To-do list</h1>
 
-        <article>
-            <input type="text" id="descriptionInput" name="descriptionInput">
-            <button onclick="insertDo()">Adicionar</button>
-        </article>
+    <section id="taskDescription">
+        <input type="text" id="inputDescription" name="inputDescription">
+        <button onclick="insertDo()"></button>
+    </section>
 
-        <footer class="wrapper" style="display: flex; flex-direction: column;">
-            <div>
-                <input type="checkbox" name="" id="">
-                <label for="">Olá</label>
-            </div>
-        </footer>
+    <section id="list" class="list">
+        <input type="checkbox" name="" id="">
+        <label for="">Olá</label>
     </section>
 
     <script src="scripts.js"></script>
