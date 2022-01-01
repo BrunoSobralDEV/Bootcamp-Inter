@@ -1,0 +1,82 @@
+:root{
+    /*Theme*/
+    --background: #dacdac;
+    --title: ;
+    --button: #f39708;
+    --list: ;
+    --checked: #f85741;
+}
+
+*{
+    font-family: 'Roboto', sans-serif;
+    text-transform: capitalize;
+}
+body{
+    background-color: #dacdac;
+    color: #0e9094;
+    display: flex;
+    justify-content: center;
+}
+
+.container{
+    text-align: center;
+    border: 2px solid;
+    border-radius: 5px;
+    width: 300px;
+    margin-top: 5rem;
+}
+h1{
+    color: var(--title)
+}
+
+.description{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+input{
+    background-color: var(--button);
+    font-size: 18px;
+    border-radius: 5px;transition: .2s linear;
+}
+input:focus { 
+    outline: none !important;
+    border-color: #0e9094;
+    box-shadow: 0 0 10px #0e9094;
+}
+
+input:checked + .labelChecked{
+    text-decoration: line-through;
+    font-style: italic;
+    color: #f85741;
+    opacity: .5;
+}
+
+button{
+    background: url(add2.svg);
+    background-color: var(--button);
+    height: 30px;
+    width: 30px;
+
+    border-radius: 2px;
+    border: 2px solid #73AD21;
+}
+button:hover { 
+    outline: none !important;
+    border-color: #719ECE;
+    box-shadow: 0 0 10px #0e9094;
+    transition: .2s linear;
+}
+button:focus { 
+    outline: none !important;
+    border-color: #0e9094;
+    box-shadow: 0 0 10px #0e9094;
+}
+
+.list{
+    color: var(--list);
+    font-size: 18px;
+    margin: 1rem;
+    text-align: left;
+}
