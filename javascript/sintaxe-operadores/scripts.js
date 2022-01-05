@@ -1,35 +1,60 @@
-function compareNumber(num1, num2){
-  let iguais = (num1 === num2);
-  let soma = num1 + num2;
-  let resultSoma;
-
-  if(soma > 10 && soma < 20){
-    resultSoma = `Sua soma (${soma}) é maior que 10 e menor que 20`;
-  }
-  if(soma < 10 && soma < 20){
-    resultSoma = `Sua soma (${soma}) é menor que 10 e menor que 20`;
-  }
-  if(soma < 10 && soma > 20){
-    resultSoma = `Sua soma (${soma}) é menor que 10 e maior que 20`;
-  }
-  if(soma > 10 && soma > 20){
-    resultSoma = `Sua soma (${soma}) é maior que 10 e maior que 20`;
-  }
-  if(soma === 10){
-    resultSoma = `Sua soma (${soma}) é igual a 10 e menor que 20`;
-  }
-  if(soma === 20){
-    resultSoma = `Sua soma (${soma}) é maior que 10 e igual a 20`;
+function bootcamp(num1, num2) {
+  let result = '';  
+  if(isEqual(num1, num2)) {
+    result = `Os números ${num1} e ${num2} são iguais. `;
+  } else {
+    result = `Os números ${num1} e ${num2} não são iguais. `;
   }
 
-
-  if(iguais){
-    console.log(`Input: ${num1} e ${num2}`)
-    console.log(`Output: Os números ${num1} e ${num2} são iguais. ${resultSoma}`)
-  }else{
-    console.log(`Input: ${num1} e ${num2}`)
-    console.log(`Output: Os números ${num1} e ${num2} NÃO são iguais. ${resultSoma}`)    
+  if(isGreaterThan10(num1 + num2) && isLessThan20(num1 + num2)) {
+    result = result + `Sua soma é ${num1 + num2}, que é maior que 10 e menor que 20.`
   }
-} 
-//Os números ${num1} e ${num2} são/não são iguais. Sua soma é maior/menor que 10 e maior/menor que 20.
-compareNumber(15, 5)
+  if(isGreaterThan20(num1 + num2)) {
+    result = result + `Sua soma é ${num1 + num2}, que é maior que 10 e maior que 20.`
+  }
+  if(isLessThan10(num1 + num2)) {
+    result = result + `Sua soma é ${num1 + num2}, que é menor que 10 e menor que 20.`
+  }
+  if(isEqualTo10(num1 + num2)) {
+    result = result + `Sua soma é ${num1 + num2}, que é igual a 10.`
+  }
+  if(isEqualTo20(num1 + num2)) {
+    result = result + `Sua soma é ${num1 + num2}, que é igual a 20.`
+  }
+  console.log(result);
+}
+
+function isEqual(num1, num2) {
+  return num1 - num2 === 0;
+}
+
+function isGreaterThan10(sum) {
+  return sum > 10;
+}
+
+function isGreaterThan20(sum) {
+  return sum > 20;
+}
+
+function isLessThan10(sum) {
+  return sum < 10;
+}
+
+function isLessThan20(sum) {
+  return sum < 20;
+}
+
+function isEqualTo10(sum) {
+  return sum === 10;
+}
+
+function isEqualTo20(sum) {
+  return sum === 20;
+}
+
+bootcamp(10, 10)
+bootcamp(10, 5)
+bootcamp(5, 5)
+bootcamp(3, 5)
+bootcamp(12, 10)
+bootcamp(8, 8)
