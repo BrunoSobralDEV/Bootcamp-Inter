@@ -20,3 +20,6 @@ Application Programming Interface
 ## fetch
 `fetch(url, options)`
 - retorna uma promise (precisa utilizar o `await`);
+
+# Demo - Atividade prática
+<img src="https://github.com/BrunoSobralDEV/Bootcamp-Inter/blob/main/javascript/async/cat-api.gif" alt="demo atividade prática">
