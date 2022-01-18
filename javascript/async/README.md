@@ -1,7 +1,9 @@
+# Anotações da aula
 - Assíncrono - "que não ocorre ou não se efetiva ao mesmo tempo"
 - Javascript roda de forma síncrona
 
-## Promises(Pending, Fulfilled, Rejected)
+## Promises
+- Objeto JavaScript que possui 3 estados: `Pending/Pendente, Fulfilled/Resolvido, Rejected/Rejeitado`;
 ```javascript
 const myPromise = new Promise((resilve, reject) => {
     window.setTimeout(() =>{
@@ -11,13 +13,13 @@ const myPromise = new Promise((resilve, reject) => {
 ```
 
 ## Async/await
-- await: resultado da promise;
+- await: Necessário para obter o resultado da promise;
 
-# API
-Application Programming Interface
-- JSON (JavaScript Object Notation)
+## API
+- Application Programming Interface, possibilita comunicação entre plataformas;
+- JSON (JavaScript Object Notation), formato de troca de informações, muito utilizado na comunicação de front-ends com APIs
 
-## fetch
+## Fetch
 `fetch(url, options)`
 - retorna uma promise (precisa utilizar o `await`);
 
